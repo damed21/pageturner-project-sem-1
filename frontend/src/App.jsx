@@ -46,7 +46,7 @@ function App() {
 const fetchBooks = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/books"
+      "https://pageturner-g78w.onrender.com/api/books"
     );
 
     if (!response.ok) {
@@ -185,7 +185,7 @@ useEffect(() => {
       setReviewMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/books/${selectedBook._id}/comments`,
+        `https://pageturner-g78w.onrender.com/api/books/${selectedBook._id}/comments`,
         {
           method: "POST",
 
