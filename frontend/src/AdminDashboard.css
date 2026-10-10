@@ -1,0 +1,302 @@
+/* ===== Admin Dashboard ===== */
+.admin-page {
+  min-height: 100vh;
+  background: #f7f7fb;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Navigation Bar ===== */
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.admin-logo {
+  margin: 0;
+  color: #5b3cc4;
+  font-size: 24px;
+}
+
+.admin-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-nav-actions span {
+  color: #333;
+  font-size: 14px;
+}
+
+.admin-nav-actions button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #5b3cc4;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-nav-actions button:hover {
+  background: #452ba5;
+}
+
+/* ===== Main Content ===== */
+.admin-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.admin-content > h1 {
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #25213a;
+}
+
+.admin-subtitle {
+  margin-bottom: 28px;
+  color: #777;
+}
+
+/* ===== Statistics Cards ===== */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-stat-card {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e8e5f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.admin-stat-card h3 {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.admin-stat-card p {
+  margin: 0;
+  color: #5b3cc4;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ===== Sections ===== */
+.admin-section {
+  margin-bottom: 30px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e8e5f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.admin-section h2 {
+  margin: 0 0 22px;
+  color: #29243d;
+  font-size: 22px;
+}
+
+/* ===== Add Book Form ===== */
+.admin-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7d3e2;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #777777;
+  opacity: 1;
+  -webkit-text-fill-color: #777777;
+}
+
+.form-field select option {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #7255d9;
+  box-shadow: 0 0 0 3px rgba(91, 60, 196, 0.12);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-book-button {
+  grid-column: 1 / -1;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #5b3cc4;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-book-button:hover {
+  background: #452ba5;
+}
+
+/* ===== Success and Error Messages ===== */
+.success-message {
+  margin-top: 18px;
+  color: #16803c;
+  font-weight: 600;
+}
+
+.error-message {
+  margin-top: 18px;
+  color: #d62828;
+  font-weight: 600;
+}
+
+/* ===== Existing Books ===== */
+.admin-books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-book-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 1px solid #e8e5f0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.admin-book-card img {
+  width: 85px;
+  height: 115px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #f0eef5;
+}
+
+.admin-book-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-book-info h3 {
+  margin: 0 0 10px;
+  color: #302454;
+  font-size: 18px;
+}
+
+.admin-book-info p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.delete-book-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #e53935;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-book-button:hover {
+  background: #c62828;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 700px) {
+  .admin-navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .admin-nav-actions {
+    flex-wrap: wrap;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-content {
+    width: 92%;
+    margin: 20px auto;
+  }
+
+  .admin-section {
+    padding: 18px;
+  }
+
+  .admin-book-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .admin-book-card img {
+    width: 70px;
+    height: 95px;
+  }
+
+  .delete-book-button {
+    margin-left: auto;
+  }
+}
