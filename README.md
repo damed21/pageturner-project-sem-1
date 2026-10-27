@@ -1,19 +1,20 @@
-# React + Vite
+## PageTurner – Online Bookstore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PageTurner is a web-based online bookstore developed using React. The website allows users to explore a collection of books, discover different genres, and find their favourite reads through an interactive and user-friendly interface.
 
-Currently, two official plugins are available:
+### Features of the Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Login:** Provides a login interface for users to access the website.
+- **Book Collection:** Displays books with their cover images and titles.
+- **Book Categories:** Allows readers to explore books across different genres.
+- **Search and Browse:** Helps users find and explore books easily.
+- **Admin Dashboard:** Provides an interface for administrators to manage bookstore content, depending on the implemented functionality.
+- **Responsive Interface:** Offers a clean and organised layout for a better browsing experience.
 
-## React Compiler
+### Technologies Used
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The frontend is developed using React, JavaScript, HTML, and CSS. Vite is used as the frontend development and build tool. The project also includes a backend folder for server-side functionality.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+### Objective
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The main objective of PageTurner is to create a convenient digital platform where readers can explore books, discover new stories, and enjoy a simple online bookstore experience.
